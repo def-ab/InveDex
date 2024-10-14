@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Investor Dashboard</h1>
+        <form id="postProposal">
+            <h2>Post Investment Proposal</h2>
+            <input type="text" id="sector" placeholder="Sector of Interest" required>
+            <input type="number" id="budget" placeholder="Investment Amount" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <button type="submit">Post Proposal</button>
+        </form>
+
+        <h2>Business Proposals</h2>
+        <div id="businessList">
+            <!-- List of business ideas will be displayed here -->
+        </div>
+    </div>
+
+    <script src="firebaseConfig.js"></script>
+    <script src="investor.js"></script>
+</body>
+</html>

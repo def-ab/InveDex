@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge Between Investor and Business People</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bridge Between Investors and Entrepreneurs</h1>
+        <div id="authSection">
+            <h2>Register or Login</h2>
+            <form id="registerForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <select id="role">
+                    <option value="investor">Investor</option>
+                    <option value="business">Businessperson</option>
+                    <option value="banker">Banker</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+
+            <form id="loginForm">
+                <h3>Already have an account? Login</h3>
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="firebaseConfig.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
